@@ -1,0 +1,8 @@
+.DS_Store
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+.claude/settings.local.json
+
+# Tệp đính kèm của bên thứ ba: giữ trên máy, không đưa lên repo
+20-sources/attachments/
