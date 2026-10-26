@@ -15,4 +15,6 @@ tags: [loop-engineering, review]
 
 # Critic nên duyệt diff trước khi thay đổi được ghi vào vault
 
-Critic rà toàn bộ phần thay đổi của một lượt chạy, không chỉ từng file mới, trước bước ghi vào vault.
+Critic rà toàn bộ phần thay đổi (diff) của một lượt chạy trước bước ghi vào vault.
+
+> Critic agent rà toàn bộ phần thay đổi (diff) trước khi ghi vào vault.

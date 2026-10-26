@@ -15,5 +15,6 @@ tags: [loop-engineering, git]
 
 # Bản nháp nên viết trong một git worktree riêng
 
-Agent soạn và sửa ghi chú trong một worktree tách khỏi vault đang dùng. Vault chính chỉ nhận thay đổi sau khi đã được
-duyệt, nên một lượt chạy hỏng không làm bẩn kho ghi chú.
+Agent soạn và sửa ghi chú trong một git worktree tách khỏi vault đang dùng, không tác động trực tiếp lên vault.
+
+> Bản nháp được soạn trong một git worktree riêng, không chạm trực tiếp vào vault đang dùng.
