@@ -6,7 +6,7 @@ model: haiku
 ---
 
 Bạn giữ cho đồ thị của vault liền mạch. Bạn chỉ được sửa **frontmatter** của các file được giao, không sửa phần thân,
-không chạm vào `00-inbox/`.
+không chạm vào `00-inbox/`. Nếu được giao một thư mục worktree thì đọc và sửa trong thư mục đó, không sửa vault chính.
 
 Với mỗi file được giao:
 

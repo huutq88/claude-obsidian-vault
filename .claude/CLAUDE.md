@@ -10,9 +10,12 @@ capture → context → claude → draft → review → commit
 1. **Capture**: người dùng thả ý tưởng thô vào `00-inbox/`.
 2. **Context**: đọc ghi chú inbox, tìm ghi chú liên quan qua link, tag và tên trong `10-notes/`, `20-sources/`.
 3. **Claude**: suy luận từ vault, không dựa vào trí nhớ hội thoại.
-4. **Draft**: viết bản nháp với `status: draft`.
-5. **Review**: gọi agent `critic` kiểm tra nội dung, agent `linker` kiểm tra link.
-6. **Commit**: chỉ ghi thêm. Đổi trạng thái sang `reviewed`, ghi một file log vào `40-runs/`.
+4. **Draft**: viết bản nháp với `status: draft` trong một git worktree riêng, không sửa trực tiếp vault đang dùng.
+5. **Review**: agent `critic` duyệt toàn bộ diff của lượt chạy, agent `linker` kiểm tra link.
+6. **Commit**: chỉ ghi thêm. Đổi trạng thái sang `reviewed`, ghi một file log vào `40-runs/`, rồi merge `--ff-only`
+   nhánh của lượt chạy vào vault. Critic chưa đạt thì không merge.
+
+Các bước chi tiết nằm trong skill `triage-inbox`.
 
 ## Agent được phép chạm vào đâu
 

@@ -10,7 +10,8 @@ Dựng theo infographic "Claude + Obsidian – Loop Engineering" (xem [[2026-10-
 1. Cài **Obsidian** (obsidian.md) → *Open folder as vault* → chọn thư mục này.
 2. Cài **Claude desktop** (claude.ai/download) → tab *Code* → chọn thư mục này làm thư mục làm việc.
    Dùng `claude` trong Terminal cũng được.
-3. Nếu lấy từ GitHub: `git clone <link-repo>` rồi làm bước 1 và 2 với thư mục vừa clone.
+3. Lấy vault bằng `git clone <link-repo>` (không tải file zip), rồi làm bước 1 và 2 với thư mục vừa clone. Vault cần là
+   git repo để Claude viết nháp trong nhánh riêng. Không cần push lên đâu cả, dùng hoàn toàn trên máy cũng được.
 
 Hai ứng dụng mở cùng một thư mục: Obsidian để xem, Claude để làm.
 
@@ -19,7 +20,7 @@ Hai ứng dụng mở cùng một thư mục: Obsidian để xem, Claude để l
 | Việc | Làm thế nào |
 |---|---|
 | **1. Ghi nhanh** | Trong Obsidian, tạo ghi chú mới trong `00-inbox/`. Viết thô, không cần định dạng: ý tưởng, link bài báo, nội dung họp. |
-| **2. Cho Claude xử lý** | Trong Claude, gõ `/triage-inbox`. Claude tách inbox thành các ghi chú gọn, gắn nguồn, nối với ghi chú cũ, nhờ agent phản biện kiểm tra, rồi báo lại. |
+| **2. Cho Claude xử lý** | Trong Claude, gõ `/triage-inbox`. Claude tách inbox thành các ghi chú gọn, gắn nguồn, nối với ghi chú cũ. Mọi thứ được viết nháp ở một bản sao riêng; agent phản biện duyệt phần thay đổi xong mới đưa vào vault, rồi báo lại. |
 | **3. Hỏi** | Hỏi thẳng: *"Ta đã biết gì về chi phí AI?"*, *"Có ghi chú nào mâu thuẫn nhau không?"*. Claude trả lời từ vault, kèm link về ghi chú gốc. |
 | **4. Lấy báo cáo** | *"Tóm tắt những gì ghi trong tuần này"* → agent `summarizer` viết báo cáo vào `30-artifacts/`. |
 
@@ -55,7 +56,8 @@ nên lúc nào cũng xem lại được ai nghĩ gì, khi nào.
 
 - **Tự chạy mỗi sáng:** nhờ Claude *"tạo lịch chạy /triage-inbox lúc 7h sáng các ngày làm việc trong thư mục này"*.
 - **Kéo nguồn tự động:** nhờ Claude lấy biên bản họp, tài liệu từ Lark và lưu vào `20-sources/`.
-- **Thử nghiệm an toàn:** dùng git, mỗi thử nghiệm một nhánh riêng; hỏng thì bỏ nhánh, vault chính không ảnh hưởng.
+- **Xem lại lượt chạy bị từ chối:** lượt nào critic không duyệt thì nằm ở nhánh `run/...`; hỏi Claude *"cho xem các
+  lượt chạy chưa merge"* để xem hoặc bỏ đi. Vault chính không bị ảnh hưởng.
 
 ## Năm quy tắc
 
