@@ -15,6 +15,6 @@ tags: [loop-engineering, git]
 
 # Bản nháp nên viết trong một git worktree riêng
 
-Agent soạn và sửa ghi chú trong một git worktree tách khỏi vault đang dùng, không tác động trực tiếp lên vault.
+Agent soạn ghi chú trong một git worktree tách khỏi vault đang dùng, không tác động trực tiếp lên vault.
 
 > Bản nháp được soạn trong một git worktree riêng, không chạm trực tiếp vào vault đang dùng.
