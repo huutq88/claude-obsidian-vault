@@ -3,7 +3,7 @@ id: 2026-10-26-triage-tu-dong-moi-sang
 type: claim
 status: draft
 created: 2026-10-26
-source: ["[[2026-10-26-chay-triage-moi-sang]]", "[[2026-10-26-kns-claude-obsidian]]"]
+source: ["[[2026-10-26-chay-triage-moi-sang]]"]
 supports: []
 contradicts: []
 supersedes: []
@@ -16,6 +16,6 @@ tags: [y-tuong, automations]
 # Nên cho /triage-inbox tự chạy lúc 7h sáng mỗi ngày
 
 Đặt một tác vụ định kỳ trong Claude desktop cho thư mục vault để `/triage-inbox` tự chạy lúc 7h sáng, người dùng không
-phải nhớ gõ lệnh. Đây là thành phần "automations" (chạy theo lịch) trong mô hình gốc.
+phải nhớ gõ lệnh.
 
 Ý tưởng chưa thử.

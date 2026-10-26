@@ -10,5 +10,5 @@ tags: [cong-cu]
 
 # Claude desktop
 
-Ứng dụng Claude trên máy tính. Theo ghi chú inbox, ứng dụng có tác vụ định kỳ (scheduled task) đặt được cho một thư
-mục; chưa xác nhận.
+Tên sản phẩm được nhắc trong ghi chú inbox. Theo ghi chú đó, sản phẩm có tác vụ định kỳ (scheduled task) đặt được cho
+một thư mục; chưa xác nhận.
