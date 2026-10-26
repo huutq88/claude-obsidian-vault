@@ -21,7 +21,7 @@ Mỗi file là một nút của đồ thị. Frontmatter là API ghi: mỗi key 
 
 | Key | Nghĩa |
 |---|---|
-| `source` | claim này lấy từ nguồn nào |
+| `source` | claim này lấy từ nguồn nào: file trong `20-sources/`, hoặc file trong `00-inbox/` nếu là ý tưởng tự ghi của người dùng |
 | `supports` / `contradicts` | claim này ủng hộ / mâu thuẫn với claim nào |
 | `supersedes` | claim này thay thế claim cũ nào |
 | `mentions` | nhắc tới entity nào |
@@ -95,5 +95,9 @@ derived_from: ["[[ghi-chu-inbox-da-xu-ly]]"]
 - Tên file = `id` + `.md`. Slug không dấu, chữ thường, gạch nối.
 - Một claim, một luận điểm. Hai ý thì tách hai file và nối bằng `supports`.
 - Giá trị liên kết luôn là danh sách wikilink trong ngoặc kép: `["[[a]]", "[[b]]"]`. Obsidian hiển thị được dạng này.
+- Ý tưởng tự ghi của người dùng (không có link, tài liệu hay tệp đính kèm) không cần ghi chú `source` riêng: claim trỏ
+  thẳng `source` về file trong `00-inbox/`. Chỉ tạo `source` trong `20-sources/` khi có tài liệu bên ngoài.
+- Chỉ tạo `entity` khi có claim nhắc tới nó trong phần thân, và thêm ngay vào `mentions` của claim đó. Tên chỉ xuất hiện
+  trong một câu hỏi chưa trả lời thì ghi câu hỏi vào file run, chưa tạo entity.
 - Trước khi tạo claim, tìm trong `10-notes/` xem đã có ý tương tự chưa. Có rồi thì thêm cạnh `supports`, không tạo bản trùng.
 - Không xoá, không viết đè. Thay ý cũ bằng `supersedes`, rồi đặt `status: superseded` cho file cũ.

@@ -16,8 +16,10 @@ Một lần gọi = một lượt của vòng lặp: capture → context → cla
    tên riêng, tag). Chỉ đọc những file liên quan.
 4. **Draft.** Theo skill `atomic-note`:
    - có link, tài liệu hoặc tệp đính kèm → tạo `source` trong `20-sources/`
+   - chỉ là ý tưởng tự ghi của người dùng → không tạo `source`; claim đặt `source` trỏ về file inbox
    - mỗi luận điểm → một `claim` trong `10-notes/`, `status: draft`
-   - người, công ty, dự án mới → `entity`
+   - người, công ty, dự án mới được một claim nhắc tới trong thân → `entity`, và thêm vào `mentions` của claim đó
+   - câu hỏi người dùng tự đặt trong inbox → chép vào mục câu hỏi của file run, không tạo claim hay entity cho nó
    - ý trùng với claim có sẵn → thêm cạnh `supports`, không tạo bản trùng
    - ý trái với claim có sẵn → tạo claim mới với `contradicts`, không sửa claim cũ
 5. **Review.** Gọi agent `critic` với danh sách file vừa tạo, sau đó gọi agent `linker`. Sửa theo góp ý. Tối đa 2 vòng sửa;
