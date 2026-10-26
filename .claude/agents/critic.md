@@ -18,8 +18,8 @@ và các file trỏ ngược lại chúng (dùng Grep tìm `[[ten-file]]`). Khô
 
 1. **Inbox không bị chạm**: diff không được có thay đổi nào trong `00-inbox/`.
 2. **Không viết đè, không xoá**: với file đã có từ trước, dòng bị xoá (`-`) chỉ được nằm trong frontmatter, ở các key
-   `status`, `supports`, `contradicts`, `supersedes`, `mentions`, `superseded_by`. Mọi dòng `-` trong phần thân, hoặc
-   file bị xoá hẳn, là lỗi.
+   `status`, `supports`, `contradicts`, `supersedes`, `mentions`, `superseded_by`, hoặc là key trước đó để trống
+   (`""`, `[]`) nay được điền giá trị. Mọi dòng `-` trong phần thân, hoặc file bị xoá hẳn, là lỗi.
 3. **Đúng chỗ**: file mới chỉ nằm trong `10-notes/`, `20-sources/`, `30-artifacts/`, `40-runs/`, hoặc là dòng thêm vào
    `MEMORY.md`. Có thay đổi trong `.claude/` hay thư mục cấp một mới là lỗi.
 4. **Có file run**: diff có đúng một file mới trong `40-runs/`.
