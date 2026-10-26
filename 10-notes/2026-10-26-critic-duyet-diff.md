@@ -1,7 +1,7 @@
 ---
 id: 2026-10-26-critic-duyet-diff
 type: claim
-status: draft
+status: reviewed
 created: 2026-10-26
 source: ["[[2026-10-26-kns-claude-obsidian]]"]
 supports: ["[[2026-10-26-nhap-trong-worktree-rieng]]"]
