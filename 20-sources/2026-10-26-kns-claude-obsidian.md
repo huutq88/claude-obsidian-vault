@@ -22,13 +22,13 @@ Nội dung chính:
 - Bốn kiểu kiến trúc và chi phí token: loop 2–4×, network 5–10×, graph 10–50× so với một lần gọi trực tiếp.
 - Năm quy tắc và bảy lỗi cần tránh.
 
+Ảnh và video gốc là nội dung của tác giả, không đưa vào repo. Xem bài đăng gốc trên trang KNS – Kỹ năng số thời đại AI.
+
 Phần chữ của bài đăng KNS nói thêm 2 điểm mà infographic chỉ vẽ lướt:
 
 - Bản nháp được soạn trong một git worktree riêng, không chạm trực tiếp vào vault đang dùng.
 - Critic agent rà toàn bộ phần thay đổi (diff) trước khi ghi vào vault.
 
 Bài đăng gọi con số 55% → 72% → 84% là mức chính xác của một trợ lý kiểm duyệt khi áp dụng lần lượt các dạng cấu trúc.
-
-Ảnh và video gốc là nội dung của tác giả, không đưa vào repo. Ảnh và video gốc là nội dung của tác giả, không đưa vào repo. Xem bài đăng gốc trên trang KNS – Kỹ năng số thời đại AI.
 
 `url` là link "bài gốc" mà bài đăng KNS dẫn tới: một bài trên X của tài khoản @polydao.
