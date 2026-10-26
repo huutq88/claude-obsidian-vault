@@ -1,7 +1,7 @@
 ---
 id: 2026-10-26-triage-tu-dong-moi-sang
 type: claim
-status: draft
+status: reviewed
 created: 2026-10-26
 source: ["[[2026-10-26-chay-triage-moi-sang]]"]
 supports: []

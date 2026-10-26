@@ -1,7 +1,7 @@
 ---
 id: 2026-10-26-bao-cao-tuan-toi-thu-sau
 type: claim
-status: draft
+status: reviewed
 created: 2026-10-26
 source: ["[[2026-10-26-chay-triage-moi-sang]]"]
 supports: []

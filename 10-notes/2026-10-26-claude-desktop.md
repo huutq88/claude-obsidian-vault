@@ -1,7 +1,7 @@
 ---
 id: 2026-10-26-claude-desktop
 type: entity
-status: draft
+status: reviewed
 created: 2026-10-26
 source: ["[[2026-10-26-chay-triage-moi-sang]]"]
 run: "[[2026-10-26T1945-triage]]"
